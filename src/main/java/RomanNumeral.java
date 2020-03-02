@@ -5,7 +5,17 @@ public class RomanNumeral {
         this.number = number;
         this.romanNumerical = "";
         while(number > 0) {
-            if(number>=10)
+            if(number>=50)
+            {
+                romanNumerical += "L";
+                number -= 50;
+            }
+            else if(number>=40)
+            {
+                romanNumerical += "X";
+                number += 10;
+            }
+            else if(number>=10)
             {
                 romanNumerical += "X";
                 number -= 10;
