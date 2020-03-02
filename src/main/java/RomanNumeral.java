@@ -1,7 +1,10 @@
 public class RomanNumeral {
     int number;
     String romanNumerical;
-    public RomanNumeral(int number){}
+    public RomanNumeral(int number){
+        this.number = number;
+        this.romanNumerical = "";
+    }
     public String getRomanNumeral()
     {
         return this.romanNumerical;
