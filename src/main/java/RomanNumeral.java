@@ -4,7 +4,14 @@ public class RomanNumeral {
     public RomanNumeral(int number){
         this.number = number;
         this.romanNumerical = "";
+        while(number > 0) {
+            if(number>=1) {
+            romanNumerical += "I";
+            number -= 1;
+            }
+        }
     }
+
     public String getRomanNumeral()
     {
         return this.romanNumerical;
